@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,
+            user-scalable=no">
+    <script type="module" src="https://pyscript.net/releases/2026.2.1/core.js"></script>
+    <style>
+    #result {font-size: 24px;font-weight: bold;}
+    </style>
+    <style>
+    input, button {font-size: 24px; font-weight: bold;}
+    </style>
+</head>
+
+<body>
+    <div style="padding:2em;">
+        <input id="user" type="text" placeholder="1から50までの整数">
+        <button mpy-click="start">数当て</button><br>
+        <button id="retry" mpy-click="retry" style="display:none;">もう一回？</button>
+        <div id="result"></div>
+    </div>
+
+    <!-- 外部pyscript -->
+    <script type="mpy" src="./main.py"></script>
+</body>
+</html>
